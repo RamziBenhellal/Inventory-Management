@@ -3,13 +3,10 @@ package com.ramzi.inventorymanagement.dto;
 import jakarta.validation.constraints.Min;
 import jakarta.validation.constraints.NotBlank;
 import jakarta.validation.constraints.NotNull;
-import lombok.Data;
-import lombok.NoArgsConstructor;
 
 import java.math.BigDecimal;
 
-@Data
-@NoArgsConstructor
+
 public class ProductDto {
     @NotBlank
     private Long id;
@@ -32,5 +29,59 @@ public class ProductDto {
     private String category_name;
 
 
+    public Long getId() {
+        return id;
+    }
 
+    public String getName() {
+        return name;
+    }
+
+    public String getSku() {
+        return sku;
+    }
+
+    public Integer getQuantity() {
+        return quantity;
+    }
+
+    public Integer getMinStock() {
+        return minStock;
+    }
+
+    public BigDecimal getPrice() {
+        return price;
+    }
+
+    public String getCategory_name() {
+        return category_name;
+    }
+
+    public void setId(Long id) {
+        this.id = id;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public void setSku(String sku) {
+        this.sku = sku;
+    }
+
+    public void setQuantity(Integer quantity) {
+        this.quantity = quantity;
+    }
+
+    public void setMinStock(Integer minStock) {
+        this.minStock = minStock;
+    }
+
+    public void setPrice(BigDecimal price) {
+        this.price = price;
+    }
+
+    public void setCategory_name(String category_name) {
+        this.category_name = category_name;
+    }
 }
