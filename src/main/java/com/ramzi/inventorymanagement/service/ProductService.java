@@ -42,8 +42,8 @@ public class ProductService {
         existing.setMinStock(dto.getMinStock());
         existing.setPrice(dto.getPrice());
 
-        if(dto.getCategory_name() != null) {
-            Category category = getOrCreateCategory(dto.getCategory_name());
+        if(dto.getCategoryName() != null) {
+            Category category = getOrCreateCategory(dto.getCategoryName());
             existing.setCategory(category);
         }
         return productRepository.save(existing);
@@ -69,8 +69,8 @@ public class ProductService {
         product.setMinStock(dto.getMinStock());
         product.setPrice(dto.getPrice());
 
-        if(dto.getCategory_name() != null){
-            Category category = getOrCreateCategory(dto.getCategory_name());
+        if(dto.getCategoryName() != null){
+            Category category = getOrCreateCategory(dto.getCategoryName());
             product.setCategory(category);
         }
         return product;

@@ -8,7 +8,7 @@ import java.math.BigDecimal;
 
 
 public class ProductDto {
-    @NotBlank
+
     private Long id;
 
     @NotBlank
@@ -26,7 +26,7 @@ public class ProductDto {
 
     private BigDecimal price;
 
-    private String category_name;
+    private String categoryName;
 
 
     public Long getId() {
@@ -53,8 +53,8 @@ public class ProductDto {
         return price;
     }
 
-    public String getCategory_name() {
-        return category_name;
+    public String getCategoryName() {
+        return categoryName;
     }
 
     public void setId(Long id) {
@@ -81,7 +81,7 @@ public class ProductDto {
         this.price = price;
     }
 
-    public void setCategory_name(String category_name) {
-        this.category_name = category_name;
+    public void setCategoryName(String category_name) {
+        this.categoryName = category_name;
     }
 }

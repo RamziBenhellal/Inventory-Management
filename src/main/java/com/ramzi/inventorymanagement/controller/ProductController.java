@@ -11,7 +11,7 @@ import org.springframework.web.bind.annotation.*;
 import java.util.List;
 
 @RestController
-@RequestMapping("/inventory/api/products")
+@RequestMapping("/api/products")
 @CrossOrigin(origins = "*")
 public class ProductController {
 
